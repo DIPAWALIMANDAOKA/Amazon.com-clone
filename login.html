@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+
+   
+</head>
+
+<body>
+    <div class="login-page">
+        <div id="log-quote"><b><i>Experience the joy of seamless shopping. Login to a world of endless choices.</i></b></div>
+     <br><br>
+    <div class="login-container">
+        <h2>Login to Amazon !</h2>
+        <form id="login-form">
+            <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+            <label for="remember-me">Remember Me</label>
+            <input type="checkbox" id="remember-me" name="remember-me"><br>
+            <button type="submit">Login</button>
+        </form>
+        <div id="error-message"></div>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+        <p>Forgot your password? <a href="/reset-password">Reset Password</a></p>
+    </div>
+    </div>
+    <!-- 
+    <script>
+        // JavaScript for handling form submission and error messages
+        const loginForm = document.getElementById('login-form');
+        const errorMessage = document.getElementById('error-message');
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const rememberMe = document.getElementById('remember-me').checked;
+
+            // You should add JavaScript here for making an API request to your server to handle authentication.
+
+            // Example API call (using Fetch API)
+            fetch('/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password, rememberMe }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response, showing an error message if login fails.
+                if (data.success) {
+                    // Redirect to user profile page or homepage upon successful login.
+                    window.location.href = '/profile';
+                } else {
+                    errorMessage.textContent = data.message;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+/* .login-container{
+    background-color: rgb(227, 178, 16);
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.login-container h2 {
+    font-size: 24px;
+}
+.login-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+
+}
+.login-container button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.8s ease; /* Adjust the duration for a slower effect */
+
+}
+#log-quote{
+    font-size: large;
+    font-weight: 100;
+    font-style: initial;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 2px solid #000; /* Simulate a cursor */
+    padding: 3px;
+    animation: typeWriter 4s steps(40) 1s forwards; /* Adjust the duration and steps as needed */
+}
+
+@keyframes typeWriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+    
+
+.login-container button:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+.login-container label {
+    display: inline-flex; /* Align the label and checkbox on the same line */
+    align-items: center; /* Vertically center them */
+}
