@@ -10,6 +10,17 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+
+    <style>
+        /* Style the link */
+        a {
+          text-decoration: none; /* Remove the underline */
+          color: #fbfbfb; /* Change the link color to black */
+        }
+
+      </style>
 </head>
 
 <body>
@@ -37,7 +48,7 @@
             </div>
 
             <div class="nav-sign-in border">
-                <p><span>Hello , sign in</span></p>
+                <p><span>Hello, <a href="login.html">Sign In</a></span></p>
                 <p class="nav-second">Account & Lists</p>
             </div>
 
@@ -151,7 +162,8 @@
 
     <footer>
         <div class="foot-panel1">
-            Back to Top
+            <p id="backToTopBtn" onclick="topFunction()">Back to Top</p>
+
         </div>
 
         <div class="foot-panel2">
